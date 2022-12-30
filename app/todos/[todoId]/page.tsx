@@ -1,5 +1,6 @@
 import React from 'react'
 import { Todo } from '../../../typing'
+import {notFound} from 'next/navigation'
 type PageProps = {
    params: {
       todoId: string
@@ -31,6 +32,8 @@ async function TodoPage({ params: { todoId } }: PageProps) {
 
 export default TodoPage
 
+
+// generate static pages
 export async function generateStaticParams() {
    const res = await fetch('https://jsonplaceholder.typicode.com/todos')
    const todos: Todo[] = await res.json()
