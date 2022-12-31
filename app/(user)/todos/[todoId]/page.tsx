@@ -1,5 +1,5 @@
 import React from 'react'
-import { Todo } from '../../../typing'
+import { Todo } from '../../../../typing'
 import {notFound} from 'next/navigation'
 type PageProps = {
    params: {
