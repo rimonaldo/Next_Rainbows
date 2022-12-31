@@ -1,4 +1,6 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "html.format.wrapLineLength": 80,
+  "editor.maxTokenizationLineLength": 2000
 }
