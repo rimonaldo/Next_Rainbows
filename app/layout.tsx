@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Header from './Header'
-
+import { Hero } from './Hero'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
    return (
@@ -8,6 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
          <head></head>
          <body>
             <Header />
+            <Hero />
             {children}
          </body>
       </html>
